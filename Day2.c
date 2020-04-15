@@ -2,7 +2,7 @@
 Input : [-4,-4,2,8]
 Output : 128
 Explanation : [-4,-4,2,8] should return 128 as the largest product can be made by multiplying -4 *-4 *8 = 128
-[2,1,9,5] should return 90 as the largest product can be made by multiplying 9*5*2=90
+[2,1,9,5] should return 90 as the largest product can be made by multiplying 9*5*2 = 90
 */
 #include<stdio.h>
 int main()
