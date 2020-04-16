@@ -19,5 +19,14 @@ Output : 128
 
 ---
 
+***Day 4***: You are given an array of intervals- that is, an array of tuples(start,end).
+The array may not be sorted, and could contain overlapping intervals. Return another array where the overlapping intervals are merged.
+Input:[(1.3),(5,8),(4,10),(20,25)]
+Output:[(1,3),(4,10),(20,25)]
+
+[Solution Page](https://github.com/Ratheshprabakar/Daily_Coding_Problems/blob/master/Day4.c)
+
+---
+
 I hope this repository will help you to learn new things. Feel free to rise PR if you found any efficient solution. Let's start :computer: 
 Happy coding  :relaxed:
