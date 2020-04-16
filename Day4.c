@@ -2,9 +2,10 @@
 The array may not be sorted, and could contain overlapping intervals. Return another array where the overlapping intervals are merged.
 Input:[(1.3),(5,8),(4,10),(20,25)]
 Output:[(1,3),(4,10),(20,25)]
-
 Explanation : This input should return [(1,3),(4,10),(20,25)] since (5,8) and (4,10) can  be merged into (4,10)
-
+Input : [(1,3),(4,10),(5,8),(6,9)]
+Output : [(1,3),(4,10)]
+Explanation : This input should return [(1,3),(4,10)] since (5,8) and (6,9) overlapping (4,10) so that it can be merged into (4,10)
 */
 #include<stdio.h>
 struct input_array
