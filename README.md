@@ -28,5 +28,19 @@ Output:[(1,3),(4,10),(20,25)]
 
 ---
 
+***Day 19***: MS Excel column titles have the following pattern: A,B,C,....Z,AA,AB,AC,.....AZ,BA,BB,BC......BZ...etc. In other words, column 1 is named as 'A', column 2 is 'B', column 26 is 'Z',column 27 is 'AA' and so forth. Given a positive integer, find its corresponding column name
+Input : 26
+Output : Z
+Input : 51
+Output : AY
+Input : 676 
+Output : YZ
+Input : 704
+Output : AAB
+
+[Solution Page](https://github.com/Ratheshprabakar/Daily_Coding_Problems/blob/master/Day19.c)
+
+---
+
 I hope this repository will help you to learn new things. Feel free to rise PR if you found any efficient solution. Let's start :computer: 
 Happy coding  :relaxed:
