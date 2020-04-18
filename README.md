@@ -42,5 +42,17 @@ Output : AAB
 
 ---
 
+***Day 17***: Given an array of integers nums sorted in ascending order, find the starting and ending position of a given target value.
+If the target is not found in the array, return 
+[-1,-1]
+Input: [5,7,7,8,8,10], target = 8
+Output : [3,4]
+Input : [5,7,7,8,8,10], target = 6
+Output :[-1,-1]
+
+[Solution Page](https://github.com/Ratheshprabakar/Daily_Coding_Problems/blob/master/Day17.c)
+
+---
+
 I hope this repository will help you to learn new things. Feel free to rise PR if you found any efficient solution. Let's start :computer: 
 Happy coding  :relaxed:
