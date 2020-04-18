@@ -1,44 +1,59 @@
-/*MS Excel column titles have the following pattern: A,B,C,....Z,AA,AB,AC,.....AZ,BA,BB,BC......BZ...etc. In other words, column 1 is named as 'A', column 2 is 'B', column 26 is 'Z',column 27 is 'AA' and so forth. Given a positive integer, find its corresponding column name
-Input : 26
-Output : Z
-Input : 51
-Output : AY
-Input : 676 
-Output : YZ
-Input : 704
-Output : AAB
+/*Given an array of integers nums sorted in ascending order, find the starting and ending position of a given target value.
+Your algorithm's runtime complexity must be in the order of O(log n).
+If the target is not found in the array, return 
+[-1,-1]
+Input: [5,7,7,8,8,10], target = 8
+Output : [3,4]
+Input : [5,7,7,8,8,10], target = 6
+Output :[-1,-1]
 */
 #include<stdio.h>
 int main()
-{
-	int number,k,i=0;
-	char alphabet_array[50];
-	while(1)
-	{	i=0;
-		printf("\nEnter the number\t");
-		scanf("%d",&number);
-		while(number>0)
+{	
+	int *input_array;
+	int size,i,target,start_index=999,end_index=999,j,flag=0;
+	printf("Enter the size of the sorted array\t");
+	scanf("%d",&size);
+	input_array=(int *)malloc(size*sizeof(int));
+	printf("Enter the elements of the sorted array\n");
+	for(i=0;i<size;i++)
+	{
+		scanf("%d",&input_array[i]);		
+	}
+	printf("Enter the target\t");
+	scanf("%d",&target);
+	for(i=0;i<size;i++)
+	{
+		if(input_array[i]==target)
 		{
-			int remainder=number % 26;
-			if(remainder==0)
+			start_index=i;
+			for(j=start_index+1;j<size;j++)
 			{
-				alphabet_array[i]='Z';
-				i++;
-				number=(number/26)-1;
 
-			}	
+				if(input_array[j]==target)
+				{
+					end_index=j;		
+				}
+				else
+					break;			
+			}
+			if(end_index==999)
+			{
+				end_index=start_index;
+				printf("[%d,%d]",start_index,end_index);			
+			}
 			else
-			{
-				alphabet_array[i] =(remainder-1) + 'A';
-				i++;
-				number=number/26;
-			}		
+				printf("[%d,%d]",start_index,end_index);
+		flag=1;		
 		}
-		alphabet_array[i]='\0';
-		for(k=i-1;k>=0;k--)
+		if(flag==1)
 		{
-			printf("%c",alphabet_array[k]);
-		}
-	}	
+			break;	
+		}	
+	}
+	if(start_index==999)
+	{
+		printf("[-1,-1]");		
+	}
+	free(input_array);
 }
-
