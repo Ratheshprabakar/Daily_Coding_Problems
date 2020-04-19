@@ -28,6 +28,20 @@ Output:[(1,3),(4,10),(20,25)]
 
 ---
 
+
+***Day 17***: Given an array of integers nums sorted in ascending order, find the starting and ending position of a given target value.
+If the target is not found in the array, return 
+[-1,-1]
+Input: [5,7,7,8,8,10], target = 8
+Output : [3,4]
+Input : [5,7,7,8,8,10], target = 6
+Output :[-1,-1]
+
+[Solution Page](https://github.com/Ratheshprabakar/Daily_Coding_Problems/blob/master/Day17.c)
+
+---
+
+
 ***Day 19***: MS Excel column titles have the following pattern: A,B,C,....Z,AA,AB,AC,.....AZ,BA,BB,BC......BZ...etc. In other words, column 1 is named as 'A', column 2 is 'B', column 26 is 'Z',column 27 is 'AA' and so forth. Given a positive integer, find its corresponding column name
 Input : 26
 Output : Z
@@ -42,15 +56,14 @@ Output : AAB
 
 ---
 
-***Day 17***: Given an array of integers nums sorted in ascending order, find the starting and ending position of a given target value.
-If the target is not found in the array, return 
-[-1,-1]
-Input: [5,7,7,8,8,10], target = 8
-Output : [3,4]
-Input : [5,7,7,8,8,10], target = 6
-Output :[-1,-1]
+***Day 25***: You are given an array representing the heights of neighboring buildings on a city street, from east to west. The city assessor would like you to write an algorithm that returns how many of these buildings have a view of the setting sun, in order to properly value the street.
 
-[Solution Page](https://github.com/Ratheshprabakar/Daily_Coding_Problems/blob/master/Day17.c)
+For example, given the array [3,7,8,3,6,1], you should return 3, since the top floors of the  buildings with heights 8,6 and 1 all have an unobstructed view to the west.
+
+Can you do this using just one forward pass through the array?
+
+
+[Solution Page](https://github.com/Ratheshprabakar/Daily_Coding_Problems/blob/master/Day25.c)
 
 ---
 
