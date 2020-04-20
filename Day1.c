@@ -8,31 +8,30 @@ Sample OUTPUT
 int main()
 {
 	int *input_array;
-	int *temp_array;
-	int array_size,i,k=0;
-	printf("Enter the array size\t");
-	scanf("%d",&array_size);
-	input_array = (int*)malloc(array_size * sizeof(int)); 
-	temp_array = (int*)malloc(array_size * sizeof(int)); 
-	for(i=0;i<array_size;i++)
+	int size,temp,temp_size,i,k=0;
+	printf("Enter the size of the array\t");
+	scanf("%d",&size);
+	temp_size=size-1;
+	input_array=(int *)malloc(size*sizeof(int));
+	for(i=0;i<size;i++)
 	{
-		scanf("%d",&input_array[i]);
-		if(input_array[i]!=0)
+		scanf("%d",&temp);
+		if(temp==0)
 		{
-			temp_array[k]=input_array[i];
-			k++;
+			input_array[temp_size]=temp;
+			temp_size--;	
 		}	
+		else
+		{
+			input_array[k]=temp;
+			k++;
+		}
 	}
-
-	for(k;k<array_size;k++)
+	printf("The Resultant Array is \n");
+	for(i=0;i<size;i++)
 	{
-		temp_array[k]=0;	
+		printf("%d\t",input_array[i]);	
 	}
-	printf("The output array is:\n");
-	free(input_array);
-	for(i=0;i<array_size;i++)
-	{
-		printf("%d\t",temp_array[i]);	
-	}
-	free(temp_array);
+	free(input_array);	
+	
 }
