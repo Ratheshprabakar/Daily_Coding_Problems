@@ -28,6 +28,19 @@ Output:[(1,3),(4,10),(20,25)]
 
 ---
 
+***Day 6***: Given a N by M matrix of numbers,print out the matrix in a clockwise spiral
+Example given matrix is shown in input
+Input:
+[[1,2,3,4,5],
+[6,7,8,9,10],
+[11,12,13,14,15],
+[16,17,18,19,20]]
+Output :1 2 3 4 5 10 15 20 19 18 17 16 11 6 7 8 9 14 13 12 
+
+
+[Solution Page](https://github.com/Ratheshprabakar/Daily_Coding_Problems/blob/master/Day6.c)
+
+---
 
 ***Day 17***: Given an array of integers nums sorted in ascending order, find the starting and ending position of a given target value.
 If the target is not found in the array, return 
